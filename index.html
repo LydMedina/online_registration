@@ -23,17 +23,22 @@
 					<fieldset>
 						<legend>Contact Information</legend>
 						<label for="full_name"> Full Name</label>
-						<input type="text" id="full_name" placeholder="Required" name="user_full_name">
+						<input type="text" id="full_name" placeholder="Required" name="user_full_name" value="" aria-describedby="name-format" required aria-required="true">
+							<span id="name-format" class="help">Format: firstname lastname</span>
 						<label for="mail">Email Address</label>
-						<input type="email" id="mail" placeholder="Required" name="user_email">
+						<input type="email" id="mail" placeholder="Required" name="user_email" value="" aria-describedby="email-format" required aria-required="true">
+							<span id="email-format" class="help">Format: myemail@email.com</span>
 						<label for="company">Company</label>
 						<input type="text" id="company" name="user_company">
 						<label for="tel">Phone Number</label>
 						<input type="tel" id="tel" name="user_tel">
 						<label for="street">Street</label>
-						<input type="text" id="street" placeholder="Required" name="user_street">
+						<input type="text" id="street" placeholder="Required" name="user_street"
+						value="" aria-describedby="street-format" required aria-required="true">
+							<span id="street-format" class="help">Format: 12345 mystreet</span>
 						<label for="city">City</label>
-						<input type="text" id="city" placeholder="Required" name="user_city">
+						<input type="text" id="city" placeholder="Required" name="user_city" value="" aria-describedby="city-format" required aria-required="true">
+							<span id="city-format" class="help">Format: New York</span>
 						<label for="state">State</label>
 						<select id="state" name="user_state">			
 								<option value="choose_state">Choose State</option>	
@@ -90,7 +95,9 @@
 								<option value="WY">Wyoming</option>							
 						</select>						
 						<label for="zip">Zip Code</label>
-						<input type="text" id="zip" placeholder="Required" name="user_zip">
+						<input type="text" id="zip" placeholder="Required" name="user_zip"
+						value="" aria-describedby="zip-format" required aria-required="true">
+							<span id="zip-format" class="help">Format: 12345</span>
 					</fieldset>
 					<hr>
 					<fieldset>
@@ -122,7 +129,7 @@
 							<input type="radio" class="radio" id="gender_male" value="male" name="user_gender">
 							<label for="gender_male" class="light">Male</label>
 							
-						<p>Other topics you'd like to hear about</p>
+						<label>Other topics you'd like to hear about</label>
 						<textarea id="other" name="user_other"></textarea>
 					</fieldset>
 					<div class="button">

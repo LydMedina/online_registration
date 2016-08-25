@@ -79,7 +79,13 @@ label.light {
 	vertical-align: top;
 }
 
-/* Input Style */
+.help {
+    display:none;
+    font-size:90%;
+} 
+input:focus + .help {
+    display:inline-block;
+} 
 
 input[type="text"]::-webkit-input-placeholder, 
 input[type="email"]::-webkit-input-placeholder {

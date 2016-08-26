@@ -7,11 +7,13 @@
 body {
 	font-family: 'Merriweather', sans-serif;	
 	background-color: #b8f2ef;
+	margin: 0;
 }
 
 .wrapper {
 	background-color: #f0ffff;
 	border-radius: 4px;
+	margin: 0 8px;
 }
 
 header {
@@ -224,18 +226,46 @@ footer {
 
 /* Media Query */
 
-@media screen and (max-width: 992px) and (min-width: 760px){
+/* 760px */
+
+@media screen and (min-width: 760px){
 	.wrapper {
-		margin: 0 15%;
+		margin: 0 10%;
+		margin-top: 2em;
 	}
 
 }
 
 
-@media screen and (max-width: 1400px) and (min-width: 993px) {
+@media screen and (min-width: 1024px) {
 	.wrapper {
-		margin: 0 30%;
+		margin: 0 15%;
 	}
+
+	.contact label {
+		box-sizing: initial;
+		display: inline-block;
+		width: 150px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="street"],
+	input[type="city"],
+	input[type="state"],
+	input[type="zip"],
+	select {
+		width: 75%;
+		margin-bottom: 2em;
+	}
+
+	#zip {
+		width: 25%;
+	}
+
+
+
 }
 
 

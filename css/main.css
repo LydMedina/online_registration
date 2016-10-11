@@ -129,7 +129,7 @@ textarea:focus {
 	background-color: transparent;
     transition-duration: 2s;
     transition-timing-function: ease;
-    filter: blur(5px);
+    filter: blur(.5px);
 }
 
 input[type="radio"],
@@ -263,9 +263,4 @@ footer {
 	#zip {
 		width: 25%;
 	}
-
-
-
 }
-
-
